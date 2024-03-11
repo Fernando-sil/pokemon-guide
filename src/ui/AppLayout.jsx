@@ -17,7 +17,7 @@ const StyledAppLayout = styled.div`
     grid-template-columns: 1fr;
   }
   @media (max-width: 500px) {
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 `;
 
