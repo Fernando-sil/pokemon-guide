@@ -34,6 +34,7 @@ body{
   font-size:1.6rem;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  overflow: auto;
 }
 
 input, button, select{

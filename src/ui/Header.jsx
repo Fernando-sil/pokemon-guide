@@ -151,14 +151,6 @@ function Header() {
     //
     dispatch({ type: "closeSearchBar" });
   }
-  function increasePagination() {
-    if (pageNumber >= pokemonData.length / 20) return;
-    dispatch({ type: "increment", payload: 1 });
-  }
-  function decreasePagination() {
-    if (pageNumber === 1) return;
-    dispatch({ type: "decrement", payload: 1 });
-  }
 
   if (search.length > 2 && buttonRight && pokemonList) {
     data = typeData.slice((pageNumber - 1) * 20, pageNumber * 20);
@@ -168,6 +160,14 @@ function Header() {
     );
   } else {
     data = pokemonData.slice((pageNumber - 1) * 20, pageNumber * 20);
+  }
+  function increasePagination() {
+    if (pageNumber >= data.length / 20) return;
+    dispatch({ type: "increment", payload: 1 });
+  }
+  function decreasePagination() {
+    if (pageNumber === 1) return;
+    dispatch({ type: "decrement", payload: 1 });
   }
 
   return (
