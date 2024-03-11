@@ -20,6 +20,10 @@ import PageNotFound from "../ui/PageNotFound";
 const StyledInfo = styled.main`
   background-image: linear-gradient(${(p) => p.color});
   overflow-y: scroll;
+  overflow-x: none;
+  /* @media (max-width: 500px) {
+    overflow-y: initial;
+  } */
 `;
 const StyledSection = styled.section`
   margin-inline: auto;
