@@ -163,11 +163,10 @@ function Header() {
   }
 
   function increasePagination() {
-    if (pokemonList && buttonRight) {
-      if (pageNumber >= typeData.length / 20) return;
-    } else {
-      if (pageNumber >= data.length / 20) return;
-    }
+    if (buttonRight && pageNumber >= typeData.length / 20) return;
+
+    if (buttonLeft && pageNumber >= pokemonData.length / 20) return;
+
     dispatch({ type: "increment", payload: 1 });
   }
   function decreasePagination() {
