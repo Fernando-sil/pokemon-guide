@@ -152,7 +152,7 @@ function Header() {
     dispatch({ type: "closeSearchBar" });
   }
   function increasePagination() {
-    if (pageNumber >= pokemonData.length / 20) return;
+    if (pageNumber >= data.length / 20) return;
     dispatch({ type: "increment", payload: 1 });
   }
   function decreasePagination() {
