@@ -16,6 +16,9 @@ const StyledAppLayout = styled.div`
   @media (max-width: 880px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 500px) {
+    overflow-y: auto;
+  }
 `;
 
 function AppLayout() {
