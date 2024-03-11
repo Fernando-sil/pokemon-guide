@@ -55,6 +55,7 @@ function TmHm() {
         decrementIndex={decrementIndex}
         incrementIndex={incrementIndex}
         pokemonInfoID={pokemonID}
+        color={backGroundColors[pokemonInfo.types[0].type.name]}
       />
     </StyledMain>
   );

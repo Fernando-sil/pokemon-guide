@@ -78,6 +78,7 @@ function Locations() {
         games={games}
         index={index}
         pokemonInfoID={pokemonInfoID}
+        color={backGroundColors[pokemonInfo.types[0].type.name]}
       ></LocationsMovesList>
     </StyledContainer>
   );

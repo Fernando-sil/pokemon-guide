@@ -35,6 +35,7 @@ function TmHmList({
   games,
   index,
   pokemonInfoID,
+  color,
 }) {
   console.log(filteredArray);
   return (
@@ -46,6 +47,7 @@ function TmHmList({
           pokemonInfoID={pokemonInfoID}
           incrementIndex={incrementIndex}
           decrementIndex={decrementIndex}
+          color={color}
         />
         <Table>
           <Table.Header>

@@ -35,6 +35,7 @@ function LocationsMovesList({
   games,
   index,
   pokemonInfoID,
+  color,
 }) {
   const listName = "Locations";
   return (
@@ -47,6 +48,7 @@ function LocationsMovesList({
           decrementIndex={decrementIndex}
           games={games}
           listName={listName}
+          color={color}
         />
         <Table>
           <Table.Header>

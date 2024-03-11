@@ -35,6 +35,7 @@ function MovesList({
   games,
   index,
   pokemonInfoID,
+  color,
 }) {
   return (
     <StyledDiv>
@@ -45,6 +46,7 @@ function MovesList({
           pokemonInfoID={pokemonInfoID}
           incrementIndex={incrementIndex}
           decrementIndex={decrementIndex}
+          color={color}
         />
         <Table>
           <Table.Header>

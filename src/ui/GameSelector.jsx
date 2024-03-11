@@ -40,6 +40,7 @@ function GameSelector({
   incrementIndex,
   pokemonInfoID,
   listName = "Moves",
+  color,
 }) {
   return (
     <StyledLabel>
@@ -57,10 +58,12 @@ function GameSelector({
           <BackForwardButton
             onCLick={decrementIndex}
             action="backward"
+            color={color}
           ></BackForwardButton>
           <BackForwardButton
             onCLick={incrementIndex}
             action="forward"
+            color={color}
           ></BackForwardButton>
         </StyledImgBtn>
       </StyledDiv>

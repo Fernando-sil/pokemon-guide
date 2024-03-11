@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   color: black;
-  background-color: green;
+  background-color: ${(p) => p.color};
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -13,9 +13,9 @@ const StyledButton = styled.button`
   justify-content: center;
 `;
 
-function BackForwardButton({ action, onCLick }) {
+function BackForwardButton({ action, onCLick, color }) {
   return (
-    <StyledButton onClick={onCLick}>
+    <StyledButton onClick={onCLick} color={color}>
       {action === "forward" ? <HiChevronRight /> : <HiChevronLeft />}
     </StyledButton>
   );

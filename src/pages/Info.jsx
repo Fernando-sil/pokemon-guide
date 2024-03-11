@@ -134,11 +134,19 @@ function Info() {
           </RoundedContainer.Description>
           <Choice>
             {index !== 0 && (
-              <BackForwardButton action="backward" onCLick={decrementIndex} />
+              <BackForwardButton
+                action="backward"
+                onCLick={decrementIndex}
+                color={backGroundColors[pokemonInfo.types[0].type.name]}
+              />
             )}
             <p>{games[index]}</p>
             {index < games.length - 1 && (
-              <BackForwardButton action="forward" onCLick={incrementIndex} />
+              <BackForwardButton
+                action="forward"
+                onCLick={incrementIndex}
+                color={backGroundColors[pokemonInfo.types[0].type.name]}
+              />
             )}
           </Choice>
         </RoundedContainer>
