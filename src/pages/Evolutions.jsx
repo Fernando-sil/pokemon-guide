@@ -24,6 +24,9 @@ const StyledContainer = styled.main`
   overflow-y: scroll;
   overflow-x: none;
   padding: 1rem 0.5rem;
+  @media (max-width: 500px) {
+    overflow-y: none;
+  }
 `;
 
 const StyledDiv = styled.div`
