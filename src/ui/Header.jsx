@@ -161,8 +161,13 @@ function Header() {
   } else {
     data = pokemonData.slice((pageNumber - 1) * 20, pageNumber * 20);
   }
+
   function increasePagination() {
-    if (pageNumber >= data.length / 20) return;
+    if (pokemonList && buttonRight) {
+      if (pageNumber >= typeData.length / 20) return;
+    } else {
+      if (pageNumber >= data.length / 20) return;
+    }
     dispatch({ type: "increment", payload: 1 });
   }
   function decreasePagination() {
