@@ -12,6 +12,9 @@ const StyledContainer = styled.main`
   background-image: linear-gradient(${(p) => p.color});
   overflow: scroll;
   padding: 3rem;
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
 `;
 
 const StyledMain = styled.main`

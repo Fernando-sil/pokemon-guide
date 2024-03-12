@@ -12,6 +12,9 @@ const StyledDiv = styled.div`
   background-image: linear-gradient(${(p) => p.color});
   padding: 3rem;
   overflow: scroll;
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
 `;
 
 function LevelupMoves() {

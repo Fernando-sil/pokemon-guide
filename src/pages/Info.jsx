@@ -33,6 +33,10 @@ const StyledSection = styled.section`
   gap: 2rem;
   padding: 2rem;
 
+  @media (max-width: 500px) {
+    padding: 1rem;
+  }
+
   @media (max-width: 400px) {
     padding: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
@@ -99,6 +103,7 @@ function Info() {
     return <PageLoaderSpinner />;
 
   const descriptionArray = displayPokemonDescription(pokemonDescription);
+  console.log(descriptionArray);
   const games = descriptionArray.map((arr) => arr.game);
   const descriptionEntry = descriptionArray
     .map((arr) => arr.combined)

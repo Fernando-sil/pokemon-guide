@@ -81,7 +81,7 @@ export function displayPokemonDescription(descriptionMap) {
         combined: {
           [entry.version.name]: entry.flavor_text,
         },
-        description: entry.flavor_text,
+        description: entry.flavor_text.replace("\f", " "),
       };
     }
     return {};
